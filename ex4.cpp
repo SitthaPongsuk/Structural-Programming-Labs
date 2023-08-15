@@ -473,8 +473,43 @@
 
 
 /* Program 4_14 */
-#include <iostream>
-#include <string>
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     char Ch;
+//     int Count = 0;
+//     string Str;
+//     cout << "Enter String : ";
+//     while (cin >> Ch){
+//         Count++;
+//         Str += Ch;
+//     }
+//     cout << "\nLength of string(" << Str << ") is ";
+//     cout << Count << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_15 */
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     string Str;
+//     cout << "Enter String : ";
+//     cin >> Str;
+//     cout << endl;
+//     cout << "Your string enter : " << Str << endl;
+//     cout << "Length of string = " << Str.length() << endl;
+//     for (int n = 0; n < Str.length(); n++){
+//         cout << "Position " << n << " = " << Str.at(n) << endl;
+//     }
+//     return(0);
+// }
 
 
 
