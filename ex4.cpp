@@ -184,15 +184,331 @@
 
 
 
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main(){
+//     cout << "Please enter a simple expression ";
+//     cout << "(number operator number) : ";
+//     int LeftOperand, RightOperand;
+//     char Operator;
+//     cin >> LeftOperand >> Operator >> RightOperand;
+//     int Result;
+//     if (Operator == '+'){
+//         Result = LeftOperand + RightOperand;
+//         cout << LeftOperand << "  " << Operator << "  ";
+//         cout << RightOperand << " equals " << Result << endl;
+//         return(0);
+//     }
+//     else if (Operator == '-'){
+//         Result = LeftOperand - RightOperand;
+//         cout << LeftOperand << "  " << Operator << "  ";
+//         cout << RightOperand << " equals " << Result << endl;
+//         return(0);
+//     }
+//     else if (Operator == '*'){
+//         Result = LeftOperand * RightOperand;
+//         cout << LeftOperand << "  " << Operator << "  ";
+//         cout << RightOperand << " equals " << Result << endl;
+//         return(0);
+//     }
+//     else if (Operator == '/') {
+//         Result = LeftOperand / RightOperand;
+//         cout << LeftOperand << "  " << Operator << "  ";
+//         cout << RightOperand << " equals " << Result << endl;
+//         return(0);
+//     }
+// }
+
+
+
+/* Program 4_5 : Calculate Area */
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     char Choice;
+//     float Area;
+//     cout << " Program Calculate Area " << endl;
+//     cout << " 1.Circle" << endl;
+//     cout << " 2.Rectangle" << endl;
+//     cout << " 3.Exit" << endl;
+//     cout << "Enter your choose number : ";
+//     cin >> Choice;
+//     if(Choice == '1'){
+//         float Radius;
+//         cout << "\nEnter radius : ";
+//         cin >> Radius;
+//         Area = 3.14159F * Radius * Radius;
+//         cout << "Area of Circle = " << Area << endl;
+//     }
+//     else if(Choice == '2'){
+//         float Length, Width;
+//         cout << "Enter length and width : ";
+//         cin >> Length >> Width;
+//         Area = Length * Width;
+//         cout << "Area of Rectangle = " << Area << endl;
+//     }
+//     else if(Choice == '3') cout << "\n...Exit Program...\n";
+//     else cout << "\nYou choose out of range is not process.\n";
+//     return(0); 
+// }
+
+
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     char Choice;
+//     float Area;
+//     cout << " Program Calculate Area " << endl;
+//     cout << " 1.Circle" << endl;
+//     cout << " 2.Rectangle" << endl;
+//     cout << " 3.Exit" << endl;
+//     cout << "Enter your choose number : ";
+//     cin >> Choice;
+//     switch (Choice){
+//         case '1' : float Radius;
+//                     cout << "\nEnter radius : ";
+//                     cin >> Radius;
+//                     Area = 3.14159F * Radius * Radius;
+//                     cout << "Area of Circle = " << Area << endl;
+//                     break;
+//         case '2' : float Length, Width;
+//                     cout << "Enter length and width : ";
+//                     cin >> Length >> Width;
+//                     Area = Length * Width;
+//                     cout << "Area of Rectangle = " << Area << endl;
+//                     break;
+//         case '3' : cout << "\n...Exit Program...\n";
+//         default : cout << "\nYou choose out of range is not process.\n";
+//     }
+//     return(0); 
+// }
+
+
+
+/* Program 4_6 : Use for statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     /* Use sequential structure */
+//     cout << 1;
+//     cout << 2;
+//     cout << 3;
+//     cout << 4;
+//     cout << 5;
+//     cout << endl;
+//     /* Use loop structure */
+//     for (int n = 1;  n <= 5; n++) cout << n;
+//     cout << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_7 : Use for statement */
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     int Number;
+//     string Name;
+//     cout << "Enter String : ";
+//     cin >> Name;
+//     cout << "Enter number : ";
+//     cin >>  Number;
+//     for (int n = 1; n <= Number; n++)
+//             cout << n << "." << Name << endl;
+//     cout << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_8 : Use for statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int Num;
+//     cout << "Enter number : ";
+//     cin >> Num;
+//     int Sum = 0;
+//     int Value;
+//     for (int n = 1; n <= Num; n++){
+//         cout << "Enter integer value(" << n <<"):";
+//         cin >> Value;
+//         Sum = Sum + Value;
+//     }
+//     cout << "\nSummation of integer " << Num;
+//     cout << "\nvalue = " << Sum << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_9 : Use while Statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "Display sqaure of number 1 to 10.\n";
+//     cout << "=========================================";
+//     cout << "\tX\t^2\n";
+//     cout << "=========================================";
+//     int X = 1;
+//     /* display value power 2 */
+//     while (X <= 10){
+//         cout << "\t" << X << "\t" << X * X << endl;
+//         X++;
+//     }
+//     return(0);
+// }
+
+
+
+/* Program 4_10 : Use while statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int ListSize = 5;
+//     int ValuesProcessed = 0;
+//     float ValueSum = 0;
+//     cout << "Plase enter " << ListSize << " numbers" << endl;
+//     while (ValuesProcessed < ListSize){
+//         float Value;
+//         cin >> Value;
+//         ValueSum += Value;
+//         ++ValuesProcessed;
+//     }
+//     float Average = ValueSum / ValuesProcessed;
+//     cout << "Average : " << Average << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_11 : Use do while statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     unsigned long Sum = 0L;
+//     int n, i = 1;
+//     cout << "Please enter value n to find sumation of n*n : ";
+//     cin >> n;
+//     do {
+//         Sum += i * i;
+//         i++;
+//     }while (i <= n);
+//     cout << "Sum = " << Sum << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_12 : Use do while statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int Num, Value, Sum;
+//     bool Flag = true;
+//     Num = 1;
+//     Sum = 0;
+//     do {
+//         cout << "Enter value" << Num << ":";
+//         cin >> Value;
+//         if(Value > 0){
+//             Sum += Value;
+//             Num++;
+//         }
+//         else Flag = false;
+//     }while (Flag == true);
+//     if (Num > 1){
+//         float Avg;
+//         Avg = static_cast<float>(Sum)/--Num;
+//         cout << "Average of data = " << Avg << endl;
+//     }
+//     else cout << "No data input." << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_13 */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int Number, Count;
+//     bool Flag = true;
+//     /* initialize and read value for number */
+//     do{
+//         cout << "\nInput number factorial(0-20)? : ";
+//         cin >> Number;
+//         if ((Number >= 0) && (Number <= 20)) Flag = false;
+//         else cout << "Number value over limit.\n";
+//     }while ( Flag );
+//     /* calculate factorial of number */
+//     if (Number >= 0){
+//         long Fac = 1;
+//         if (Number > 0){
+//             Count = 1;
+//             while(Count <= Number) Fac *= Count++;
+//             cout << "\nFactorial of " << Number << " = ";
+//             cout << Fac << endl;
+//         }
+//     }
+//     return(0);
+// }
+
+
+
+/* Program 4_14 */
 #include <iostream>
-using namespace std;
-int main(){
-    // int water, bread, egg;
-    // cout << "Please Enter Number of water bottles donated : ";
-    // cin >> water;
-    // cout << "Please Enter Number of bread donated : ";
-    // cin >> bread;
-    // cout << "Please Enter Number of eggs danated : ";
-    // cin >> egg;
-    cout << 1000%4;
-}
+#include <string>
+
+
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int water, bread, egg, w, b, e;
+//     cout << "Please Enter Number of water bottles donated : ";
+//     cin >> water;
+//     cout << "Please Enter Number of bread donated : ";
+//     cin >> bread;
+//     cout << "Please Enter Number of eggs danated : ";
+//     cin >> egg;
+
+//     w = water / 3;
+//     b = bread / 4;
+//     e = egg / 2;
+
+//     if (w > b){
+//         w = b;
+//     }
+//     if (w > e){
+//         w = e;
+//     }
+//     int bag = w;
+//     cout << "Result of Donation bag : "<< bag << endl;
+
+//     int ww, bb, ee;
+//     ww = water - (bag * 3);
+//     bb = bread - (bag * 4);
+//     ee = egg - (bag * 2);
+
+//     cout << "Tha remaining amount of donation water bottles : " << ww <<endl;
+//     cout << "Tha remaining amount of donation breade : " << bb <<endl;
+//     cout << "Tha remaining amount of donation eggs : " << ee <<endl;
+//     return(0);
+// }
