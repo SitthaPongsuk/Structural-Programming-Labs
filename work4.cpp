@@ -94,5 +94,20 @@
 using namespace std;
 int main()
 {
-    
+    do{
+    int num, total;
+    cout << "Restaurant menu" << endl;
+    cout << "1. Minced Pork Omelet 45 Baht" << endl;
+    cout << "2. Stir Fried Basil with Minced Pork 40 Baht" << endl;
+    cout << "3. Stir Fried Kale with Crispy Pork Belly 55 Baht" << endl;
+    cout << "4. Stir Fried Pork Curry Paste 45 Baht" << endl;
+    cout << "5. Fried Pork with Garlic 45 Baht" << endl;
+    cout << "0. Exit" << endl;
+    cout << "Please select a menu : ";
+    cin >> num;
+    if(num == 1 || num == 4 || num == 5){
+        total += 45;
+        cout << ""
+    }
+    }
 }
