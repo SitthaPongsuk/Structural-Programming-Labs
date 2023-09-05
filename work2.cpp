@@ -1,4 +1,4 @@
-/* 2_4 Program to calculate area of ​​rectangle  */
+/* 2_5 Program to calculate area of ​​rectangle  */
 // #include <iostream>
 // using namespace std;
 
@@ -17,7 +17,7 @@
 
 
 
-/* 2_5 Program to calculate area of Circle */
+/* 2_6 Program to calculate area of Circle */
 // #include <iostream>
 // using namespace std;
 
@@ -35,18 +35,18 @@
 
 
 
-/* 2_6 Program to receive product price and VAT rate (%) */
-#include <iostream>
-using namespace std;
+/* 2_7 Program to receive product price and VAT rate (%) */
+// #include <iostream>
+// using namespace std;
 
-int main()
-{
-    int num1, num2;
-    cout << "Enter price : ";
-    cin >> num1;
-    cout << "Enter vat (%) : ";
-    cin >> num2;
-    cout << endl;
-    cout << "Net Price of product = " << " " << num1 + (num1 * num2 / 100) << endl;
-    return(0);
-}
+// int main()
+// {
+//     int num1, num2;
+//     cout << "Enter price : ";
+//     cin >> num1;
+//     cout << "Enter vat (%) : ";
+//     cin >> num2;
+//     cout << endl;
+//     cout << "Net Price of product = " << " " << num1 + (num1 * num2 / 100) << endl;
+//     return(0);
+// }

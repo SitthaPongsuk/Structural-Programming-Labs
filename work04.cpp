@@ -90,65 +90,65 @@
 
 
 /* Program : restaurant */
-#include <iostream>
-using namespace std;
-int main()
-{
-    int num, total = 0, add;
-    do{
-    cout << "Restaurant menu" << endl;
-    cout << "1. Minced Pork Omelet 45 Baht" << endl;
-    cout << "2. Stir Fried Basil with Minced Pork 40 Baht" << endl;
-    cout << "3. Stir Fried Kale with Crispy Pork Belly 55 Baht" << endl;
-    cout << "4. Stir Fried Pork Curry Paste 45 Baht" << endl;
-    cout << "5. Fried Pork with Garlic 45 Baht" << endl;
-    cout << "0. Exit" << endl;
-    cout << "Please select a menu : ";
-    cin >> num;
-    if(num == 1 || num == 4 || num == 5){
-        total += 45;
-        cout << "Want a fried egg(1) or want an omelet(2) or Do not need(0) : ";
-        cin >> add;
-        if(add == 1){
-            total += 5;
-        }
-        else if(add == 2){
-            total += 10;
-        }
-        else{
-            total += 0;
-        }
-    }
-    else if(num == 2){
-        total += 40;
-        cout << "Want a fried egg(1) or want an omelet(2) or Do not need(0) : ";
-        cin >> add;
-        if(add == 1){
-            total += 5;
-        }
-        else if(add == 2){
-            total += 10;
-        }
-        else{
-            total += 0;
-        }
-    }
-    else if(num == 3){
-        total += 55;
-        cout << "Want a fried egg(1) or want an omelet(2) or Do not need(0) : ";
-        cin >> add;
-        if(add == 1){
-            total += 5;
-        }
-        else if(add == 2){
-            total += 10;
-        }
-        else{
-            total += 0;
-        }
-    }
-    }while(num != 0);
-    cout << "Total amount " << total << " Baht" << endl;
-    cout << "Exit of menu selection" << endl;
-    return(0);
-}
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int num, total = 0, add;
+//     do{
+//     cout << "Restaurant menu" << endl;
+//     cout << "1. Minced Pork Omelet 45 Baht" << endl;
+//     cout << "2. Stir Fried Basil with Minced Pork 40 Baht" << endl;
+//     cout << "3. Stir Fried Kale with Crispy Pork Belly 55 Baht" << endl;
+//     cout << "4. Stir Fried Pork Curry Paste 45 Baht" << endl;
+//     cout << "5. Fried Pork with Garlic 45 Baht" << endl;
+//     cout << "0. Exit" << endl;
+//     cout << "Please select a menu : ";
+//     cin >> num;
+//     if(num == 1 || num == 4 || num == 5){
+//         total += 45;
+//         cout << "Want a fried egg(1) or want an omelet(2) or Do not need(0) : ";
+//         cin >> add;
+//         if(add == 1){
+//             total += 5;
+//         }
+//         else if(add == 2){
+//             total += 10;
+//         }
+//         else{
+//             total += 0;
+//         }
+//     }
+//     else if(num == 2){
+//         total += 40;
+//         cout << "Want a fried egg(1) or want an omelet(2) or Do not need(0) : ";
+//         cin >> add;
+//         if(add == 1){
+//             total += 5;
+//         }
+//         else if(add == 2){
+//             total += 10;
+//         }
+//         else{
+//             total += 0;
+//         }
+//     }
+//     else if(num == 3){
+//         total += 55;
+//         cout << "Want a fried egg(1) or want an omelet(2) or Do not need(0) : ";
+//         cin >> add;
+//         if(add == 1){
+//             total += 5;
+//         }
+//         else if(add == 2){
+//             total += 10;
+//         }
+//         else{
+//             total += 0;
+//         }
+//     }
+//     }while(num != 0);
+//     cout << "Total amount " << total << " Baht" << endl;
+//     cout << "Exit of menu selection" << endl;
+//     return(0);
+// }

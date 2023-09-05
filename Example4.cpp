@@ -31,7 +31,7 @@
 //     if (score <= 54 && score >= 50) cout << "Grade D" << endl;
 //     if (score < 50) cout << "Grade F" << endl;
 //     return(0);
-//}
+// }
 
 
 
@@ -374,24 +374,142 @@
 
 
 /* Program 4_10 : Use while statement */
-#include <iostream>
-using namespace std;
-int main()
-{
-    int ListSize = 5;
-    int ValuesProcessed = 0;
-    float ValueSum = 0;
-    cout << "Plase enter " << ListSize << " numbers" << endl;
-    while (ValuesProcessed < ListSize){
-        float Value;
-        cin >> Value;
-        ValueSum += Value;
-        ++ValuesProcessed;
-    }
-    float Average = ValueSum / ValuesProcessed;
-    cout << "Average : " << Average << endl;
-    return(0);
-}
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int ListSize = 5;
+//     int ValuesProcessed = 0;
+//     float ValueSum = 0;
+//     cout << "Plase enter " << ListSize << " numbers" << endl;
+//     while (ValuesProcessed < ListSize){
+//         float Value;
+//         cin >> Value;
+//         ValueSum += Value;
+//         ++ValuesProcessed;
+//     }
+//     float Average = ValueSum / ValuesProcessed;
+//     cout << "Average : " << Average << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_11 : Use do while statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     unsigned long Sum = 0L;
+//     int n, i = 1;
+//     cout << "Please enter value n to find sumation of n*n : ";
+//     cin >> n;
+//     do {
+//         Sum += i * i;
+//         i++;
+//     }while (i <= n);
+//     cout << "Sum = " << Sum << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_12 : Use do while statement */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int Num, Value, Sum;
+//     bool Flag = true;
+//     Num = 1;
+//     Sum = 0;
+//     do {
+//         cout << "Enter value" << Num << ":";
+//         cin >> Value;
+//         if(Value > 0){
+//             Sum += Value;
+//             Num++;
+//         }
+//         else Flag = false;
+//     }while (Flag == true);
+//     if (Num > 1){
+//         float Avg;
+//         Avg = static_cast<float>(Sum)/--Num;
+//         cout << "Average of data = " << Avg << endl;
+//     }
+//     else cout << "No data input." << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_13 */
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int Number, Count;
+//     bool Flag = true;
+//     /* initialize and read value for number */
+//     do{
+//         cout << "\nInput number factorial(0-20)? : ";
+//         cin >> Number;
+//         if ((Number >= 0) && (Number <= 20)) Flag = false;
+//         else cout << "Number value over limit.\n";
+//     }while ( Flag );
+//     /* calculate factorial of number */
+//     if (Number >= 0){
+//         long Fac = 1;
+//         if (Number > 0){
+//             Count = 1;
+//             while(Count <= Number) Fac *= Count++;
+//             cout << "\nFactorial of " << Number << " = ";
+//             cout << Fac << endl;
+//         }
+//     }
+//     return(0);
+// }
+
+
+
+/* Program 4_14 */
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     char Ch;
+//     int Count = 0;
+//     string Str;
+//     cout << "Enter String : ";
+//     while (cin >> Ch){
+//         Count++;
+//         Str += Ch;
+//     }
+//     cout << "\nLength of string(" << Str << ") is ";
+//     cout << Count << endl;
+//     return(0);
+// }
+
+
+
+/* Program 4_15 */
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     string Str;
+//     cout << "Enter String : ";
+//     cin >> Str;
+//     cout << endl;
+//     cout << "Your string enter : " << Str << endl;
+//     cout << "Length of string = " << Str.length() << endl;
+//     for (int n = 0; n < Str.length(); n++){
+//         cout << "Position " << n << " = " << Str.at(n) << endl;
+//     }
+//     return(0);
+// }
 
 
 
@@ -409,6 +527,7 @@ int main()
 //     w = water / 3;
 //     b = bread / 4;
 //     e = egg / 2;
+
 //     if (w > b){
 //         w = b;
 //     }

@@ -74,12 +74,8 @@ int main()
     cin >> skilo;
     cout << "Enter end kilometer : ";
     cin >> ekilo;
-    cout << "Enter time used(hour) : ";
-    cin >> hour;
-    cout << "Enter time used(minute) : ";
-    cin >> minute;
-    cout << "Enter time used(second) : ";
-    cin >> second;
+    cout << "Enter time used(hour minute second) : ";
+    cin >> hour >> minute >> second;
     cout << endl;
     distance = ekilo - skilo;
     cout << "Car traveled" << " " << distance << " " << "kilometers in " << " " << hour << " " << "hrs" << " " << minute << " " << "min" << " " << second << " " << "sec." << endl;

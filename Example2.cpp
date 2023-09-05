@@ -133,7 +133,8 @@
 //     float Gpa = 2.89;
 //     short Age = 20;
 //     string Department = "Information Technology";
-//     string Room = "1RB";cout << "Student Code : "<< ID << endl;
+//     string Room = "1RB";
+//     cout << "Student Code : "<< ID << endl;
 //     cout << "Student Name : "<< Name << endl;
 //     cout << "Department :  "<< Department << endl;
 //     cout << "Room : "<< Room << endl;
